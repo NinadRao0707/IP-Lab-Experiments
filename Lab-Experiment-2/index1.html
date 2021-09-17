@@ -2,67 +2,81 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/style1.css" />
         <title>My Profile</title>
     </head>
-    <body background="catto.jpg">
-        <h1>My Profile</h1>
+    <body background="images/catback.jpg">
 
-        <h3><ins>Personal Details</ins></h3>
-        <p><strong>First Name:</strong> Ninad</p>
-        <p><strong>Last Name</strong> Rao</p>
-        <p><strong>Roll No.</strong> 58</p>
-        <p><strong>Email ID:</strong> 2019ninad.rao@ves.ac.in</p>
+        <h1 class="heading">My Profile</h1>
 
-        <h3><ins>Photograph</ins></h3>
-        <img src="catphoto.jpg">
+        <div class="row">
 
-        <h3><ins>My Skills</ins></h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
+            <div class="card profilecard column">
+                <img src="images/catphoto.jpg" alt="" />
+                <div class="container profile">
+                    <h1>Ninad Rao</h1>
+                    <p class="title">Web Developer</p>
+                    <p>Vivekanand Education Society's Institute Of Technology</p>
+                    <a class="github" href="https://github.com/NinadRao0707"><i class="fa fa-github fa-lg"></i></a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/ninad-rao-04765b28/"><i class="fa fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="card skillscard">
+                    <p>HTML</p>
+                    <div class="container cardskills">
+                        <div class="skills html">
+                            90%
+                        </div>
+                    </div>
+        
+                    <p>CSS</p>
+                    <div class="container cardskills">
+                        <div class="skills css">
+                            80%
+                        </div>
+                    </div>
+        
+                    <p>JavaScript</p>
+                    <div class="container cardskills">
+                        <div class="skills js">
+                            65%
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card skillsetcard">
+                    <ul>
+                        <li>Critical thinking and problem solving</li>
+                        <li>Teamwork and collaboration</li>
+                        <li>Professionalism and strong work ethic</li>
+                    </ul>
+                </div>
 
-        <h3><ins>My Links</ins></h3>
-        <ol>
-            <li><a href="https://github.com/NinadRao0707">GitHub</a></li>
-            <li><a href="https://www.hackerrank.com/NinadRao">Hackerrank</a></li>
-            <li><a href="https://www.linkedin.com/in/ninad-rao-04765b28/">LinkedIn</a></li>
-        </ol>
+            </div>
 
-        <h3><ins>Skill Sets</ins></h3>
-        <table>
-            <tr>
-                <th>Sr.</th>
-                <th></th>
-                <th>Skills</th> 
-            </tr>
-            <tr>
-                <td>1</td>
-                <td></td>
-                <td>Critical thinking and problem solving.</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td></td>
-                <td>Teamwork and collaboration.</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td></td>
-                <td>Professionalism and strong work ethic.</td>
-            </tr>
-        </table>
+        </div>
 
-        <h3><ins>Video</ins></h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="20px" allowfullscreen>
-            <p>Your browser does not support iframes.</p>
-        </iframe>
+        <div class="row">
 
-        <h3><ins>Audio</ins></h3>
-        <audio controls>
-            <source src="catsmeow.mp3" type="audio/ogg">
-            Your browser does not support the audio element.
-        </audio>
+            <div class="column">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="20px" allowfullscreen>
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+            </div>
+
+            <div class="column">
+                <audio controls>
+                    <source src="audio/catsmeow.mp3" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+        </div>
+        
     </body>
 </html>

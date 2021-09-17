@@ -2,64 +2,96 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/style2.css" />
         <title>Order Details</title>
     </head>
-    <body background="yellow.jpg">
-        <h1>Place Order</h1>
+    <body background="images/yellow.jpg">
 
-        <h3><ins>My Order</ins></h3>
-        <form action="">
-            <img src="tshirt.jpg"><br><br>
+        <div class="row">
 
-            <label for="tagline"><strong>Tagline on the shirt:</strong></label><br><br>
-            <input type="text" id="tagline" name="tagline"><br>
+            <div class="card productcard column">
+                <img src="images/tshirt.jpg">
+                <div class="container profile">
+                    <h1 class="order">My Order</h1>
+                </div>
+            </div>
 
-            <p><strong>Choose shirt color:</strong></p>
-            <input type="radio" id="red" name="color" value="red">
-            <label for="red">Red</label><br>
-            <input type="radio" id="green" name="color" value="green">
-            <label for="green">Green</label><br>
-            <input type="radio" id="blue" name="color" value="blue">
-            <label for="blue">Blue</label><br><br>
+            <div class="card ordercard column">
+                <h1 class="heading">Place Order</h1>
 
-            <label for="size"><strong>Choose shirt size:</strong></label>
-            <select name="size" id="size">
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-            </select><br><br>
+                <form action="">
 
-            <label for="quantity"><strong>Choose quantity:</strong></label>
-            <select name="quantity" id="quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select><br><br>
+                    <label for="tagline"><strong>Tagline on the shirt:</strong></label>
+                    <input type="text" id="tagline" name="tagline">
 
-            <label for="orderdate"><strong>Order date:</strong></label>
-            <input type="date" id="orderdate" name="orderdate"><br><br>
+                    <p>
+                        <strong>Choose shirt color:</strong>
+                    </p>
+                    <input type="radio" id="red" name="color" value="red">
+                    <label for="red">Red</label><br>
+                    <input type="radio" id="green" name="color" value="green">
+                    <label for="green">Green</label><br>
+                    <input type="radio" id="blue" name="color" value="blue">
+                    <label for="blue">Blue</label>
 
-            <label for="name"><strong>Enter your name:</strong></label><br><br>
-            <input type="text" id="name" name="name"><br><br>
+                    <p>
+                        <label for="size"><strong>Choose shirt size:</strong></label>
+                        <select name="size" id="size">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </p>
 
-            <label for="number"><strong>Enter your mobile number:</strong></label><br><br>
-            <input type="text" id="number" name="number"><br><br>
+                    <p>
+                        <label for="quantity"><strong>Choose quantity:</strong></label>
+                        <select name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </p>
+                    
+                    <label for="orderdate"><strong>Order date:</strong></label>
+                    <input type="date" id="orderdate" name="orderdate">
 
-            <label for="address"><strong>Enter your address:</strong></label><br><br>
-            <textarea id="address" name="address" rows="4" cols="50"></textarea>
+                    <p>
+                        <label for="name"><strong>Enter your name:</strong></label>    
+                        <input type="text" id="name" name="name">
+                    </p>
 
-            <p><strong>Choose payment options:</strong></p>
-            <input type="radio" id="card" name="pay" value="card">
-            <label for="card">Card</label><br>
-            <input type="radio" id="paytm" name="pay" value="paytm">
-            <label for="paytm">Paytm</label><br>
-            <input type="radio" id="cash" name="pay" value="cash">
-            <label for="cash">Cash</label><br><br>
+                    <p>
+                        <label for="number"><strong>Enter your mobile number:</strong></label>
+                        <input type="text" id="number" name="number">
+                    </p>
 
-            <p><strong>Total amount:</strong> ₹ 500</p>
-            <input type="submit" value="Place Order">
-        </form> 
+                    <p>
+                        <label for="address"><strong>Enter your address:</strong></label>
+                    </p>
+                    <textarea id="address" name="address" rows="4" cols="50"></textarea>
+
+                    <p>
+                        <strong>Choose payment options:</strong>
+                    </p>
+                    <input type="radio" id="card" name="pay" value="card">
+                    <label for="card">Card</label><br>
+                    <input type="radio" id="paytm" name="pay" value="paytm">
+                    <label for="paytm">Paytm</label><br>
+                    <input type="radio" id="cash" name="pay" value="cash">
+                    <label for="cash">Cash</label>
+
+                    <p><strong>Total amount:</strong> ₹ 500</p>
+                    <button class="button green" type="submit">Place Order</button>
+                </form> 
+                
+            </div>
+
+        </div>
+
     </body>
 </html>
