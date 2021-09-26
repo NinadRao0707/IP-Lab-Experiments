@@ -29,7 +29,7 @@ document.getElementById("printRoll").innerHTML = student2.rollNo;
 
 // Generating an Exception
 function checkError() {
-    const value = document.getElementById("check_error").value;
+    const value = document.getElementById("checkError").value;
     console.log(value);
 
     if (isNaN(value) || value == 0) {
