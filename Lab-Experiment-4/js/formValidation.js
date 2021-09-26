@@ -13,20 +13,11 @@ function formValidation() {
     ];
 
     // Validate the user name input
-    var lettersName = /^[A-Za-z]+$/;
+    var lettersName = /^[a-zA-Z]+ [a-zA-Z]+$/;
     if(!values[4].match(lettersName))
     {
-        alert('Name must have alphabet characters only');
+        alert('Name must have alphabets only');
         values[4].focus();
-        return;
-    }
-
-    // Validate the user address input
-    var lettersAddr = /^[0-9a-zA-Z]+$/;
-    if(!values[6].match(lettersAddr))
-    {
-        alert('Address must have alphanumeric characters only');
-        values[6].focus();
         return;
     }
 
@@ -75,7 +66,6 @@ function formValidation() {
         return;
     }
 
-    // Make form inputs empty if form is not submitted
     document.getElementById("tagline").value = "";
     var ele = document.getElementsByName("color");
     for (var i = 0; i < ele.length; i++) ele[i].checked = false;
@@ -85,26 +75,7 @@ function formValidation() {
     var ele = document.getElementsByName("pay");
     for (var i = 0; i < ele.length; i++) ele[i].checked = false;
 
-    // Store the form inputs values for the final receipt
-    const receipt = {
-        tagline: values[0],
-        color: values[1],
-        size: values[2],
-        quantity: values[3],
-        name: values[4],
-        number: values[5],
-        address: values[6],
-        payment: values[7],
-    };
-
     // Print the receipt
-    const receipt_formatted = `Thank you for shopping!\nHere's your receipt:\nTagline: ${values[0]}\nColor: ${values[1]}\nSize: ${values[2]}\nQuantity: ${values[3]}\nName: ${values[4]}\nPhone Number: ${values[5]}\nAddress: ${values[6]}\nPayment Method: ${values[7]}\n\nDate of receipt: ${todaysDate}`;
-
+    const receipt_formatted = `Here's your receipt:\n\nTagline: ${values[0]}\nColor: ${values[1]}\nSize: ${values[2]}\nQuantity: ${values[3]}\nName: ${values[4]}\nPhone Number: ${values[5]}\nAddress: ${values[6]}\nPayment Method: ${values[7]}\nTotal Cost: ₹ 500\n\nDate of receipt: ${todaysDate}`;
     alert(receipt_formatted);
 }
-
-const form = document.getElementById("shirt_cart");
-
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-});
