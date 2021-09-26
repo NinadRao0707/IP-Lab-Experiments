@@ -25,7 +25,7 @@ function formValidation() {
     if(values[2] == "default")
     {
         alert('Select your size from the list');
-        ucountry.focus();
+        values[2].focus();
         return;
     }
 
@@ -33,7 +33,7 @@ function formValidation() {
     if(values[3] == "default")
     {
         alert('Select your quantity from the list');
-        ucountry.focus();
+        values[3].focus();
         return;
     }
 
