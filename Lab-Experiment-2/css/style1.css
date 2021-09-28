@@ -38,6 +38,13 @@ body {
     text-transform: uppercase;
 }
 
+aside {
+    width: 30%;
+    margin-right: 30%;
+    float: right;
+    margin-top: 10%;
+}
+
 img {
     border-radius: 5px 5px 0 0;
     width: 100%;
