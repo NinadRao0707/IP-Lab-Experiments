@@ -1,0 +1,33 @@
+abbr[title] {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+}
+
+body {
+    background-image: url('/Lab-Experiment-3/images/catbackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+a i {
+    transition: all 0.3s linear;
+}
+
+a:hover i {
+    transform: scale(1.5);
+}
+
+mark {
+    background-color: rgb(236, 241, 163);
+}
+
+.breadcrumb {
+    margin-top: 1rem;
+    background-color: rgb(236, 241, 163);
+}
+.breadcrumb li {
+    display:inline-block;
+    list-style:none ;
+}
